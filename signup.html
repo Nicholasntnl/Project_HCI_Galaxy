@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/d1d00c550e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="banner">
+            <div class="title-text">
+                <p>Sign Up</p>
+                <h1>Please input your data</h1>
+            </div>
+            <div class="signup-box">
+            <form>
+                <label>First Name</label>
+                <input type="text" placeholder="">
+                <label>Last Name</label>
+                <input type="text" placeholder="">
+                <label>Email</label>
+                <input type="email" placeholder="">
+                <label>Password</label>
+                <input type="password" placeholder="">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="">
+                <input type="button" value="Submit"
+            </form>
+            <p class="par2">Already have an account? <a href="login.html">Login</a></p>
+            </div>
+    </section>
+
+    <section id="footer">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>You can contact Us</h1>
+        </div>
+        <div class="fr">
+            <div class="fle">
+                <h1>Office</h1>
+                <p><i class="fa fa-map-marker"></i>Binus Anggrek, Kemanggisan</p>
+                <p><i class="fa fa-map-marker"></i>Binus Alam Sutera</p>
+                <p><i class="fa fa-map-marker"></i>Binus Senayan</p>
+            </div>
+            <div class="fri">
+                <h1>Get In Touch</h1>
+                <p>astronom214@website.com<i class="fa fa-paper-plane"></i></p>
+                <p>(021)12345678<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <p>Copyright Astronom Nischolas</p>
+        </div>
+
+    </section>
+
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="HTML - Nico.html">Home</a></li>
+                <li><a href="HTML - Nico.html">Space</a></li>
+                <li><a href="galaxy.html">Galaxy</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="tombol2">
+        <img src="menu.png" id="menuu">
+    </div>
+
+    <script>
+        var tombol2 = document.getElementById("tombol2")
+        var menu = document.getElementById("menu")
+        var menuu = document.getElementById("menuu")
+
+        menu.style.right = "-250px"
+        tombol2.onclick = function(){
+            if(menu.style.right == "-250px"){
+                menu.style.right = "0";
+                menuu.src = "close.png"
+            }
+            else{
+                menu.style.right = "-250px";
+                menuu.src = "menu.png"
+            }
+        }
+    </script>
+</body>
+</html>
